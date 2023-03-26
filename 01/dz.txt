@@ -1,0 +1,61 @@
+ {person,1,"Bob",23,male}.
+{person,1,"Bob",23,male}
+2> {person,1,"Bob",23,male}.
+{person,1,"Bob",23,male}
+3> {person,1,"Bob",23,male},{person,2,"Kate",20,female},{person,3,"Jack",male},{person,4,"Nata",54,female}.
+{person,4,"Nata",54,female}
+4> Persons=[{person,1,"Bob",23,male},{person,2,"Kate",20,female},{person,3,"Jack",male},{person,4,"Nata",54,female}].
+[{person,1,"Bob",23,male},
+ {person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+5> [First|Rest]=Persons.
+[{person,1,"Bob",23,male},
+ {person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+6> First.
+{person,1,"Bob",23,male}
+7> Rest.
+[{person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+8> [Second | Rest1] = Rest.
+[{person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+9> Second.
+{person,2,"Kate",20,female}
+10> Rest.
+[{person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+11> [Third, Fourth | Rest2] = Rest1.
+[{person,3,"Jack",male},{person,4,"Nata",54,female}]
+12> Third.
+{person,3,"Jack",male}
+13> Fourth.
+{person,4,"Nata",54,female}
+14> Rest2.
+[]
+15> Persons.
+[{person,1,"Bob",23,male},
+ {person,2,"Kate",20,female},
+ {person,3,"Jack",male},
+ {person,4,"Nata",54,female}]
+20> "Night".
+"Night"
+21> <<78,105,103,104,116>>.
+<<"Night">>
+22> $N.
+78
+23> $i.
+105
+24> $g.
+103
+25> $h.
+104
+26> $t.
+116
+27>
+
